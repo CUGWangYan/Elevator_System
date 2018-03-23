@@ -7,12 +7,12 @@ void Elevator::GoOut(int n) {
 	this->m_Number -= n;
 }
 void Elevator::GoUp() {
-	std::cout << "µ±Ç°µçÌÝÎ»ÓÚµÚ" << m_Floor << "²ã£¡£¡" << std::endl;
+	std::cout << "å½“å‰ç”µæ¢¯ä½äºŽç¬¬" << m_Floor << "å±‚ï¼ï¼" << std::endl;
 	this->m_Floor++;
 
 }
 void Elevator::GoDown() {
-	std::cout << "µ±Ç°µçÌÝÎ»ÓÚµÚ" << m_Floor << "²ã£¡£¡" << std::endl;
+	std::cout << "å½“å‰ç”µæ¢¯ä½äºŽç¬¬" << m_Floor << "å±‚ï¼ï¼" << std::endl;
 	this->m_Floor--;
 
 }
@@ -29,6 +29,6 @@ int Elevator::getNumber() {
 	return m_Number;
 }
 bool Elevator::IsFull() {
-	if (m_Number <= MaxNumber) return false;
+	if (m_Number < MaxNumber) return false;
 	else return true;
 }
